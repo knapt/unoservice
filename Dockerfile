@@ -22,5 +22,6 @@ COPY unoservice /unoservice/unoservice
 WORKDIR /unoservice
 RUN pip3 install -e . 
 VOLUME /tmp
+RUN mount type=tmpfs,destination=/tmp
 
 CMD ["python3", "unoservice/async.py"]
