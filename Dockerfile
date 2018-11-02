@@ -24,4 +24,4 @@ RUN pip3 install -e .
 VOLUME  /tmp
 EXPOSE 3000 3000
 
-CMD [python3, unoservice/async.py]
+CMD ["python3", "unoservice/async.py"]
