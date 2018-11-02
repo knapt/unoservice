@@ -22,7 +22,7 @@ COPY unoservice /unoservice/unoservice
 WORKDIR /unoservice
 RUN pip3 install -e . 
 VOLUME  /tmp
-RUN chmod o+rwx to /tmp
+RUN chmod o+rwx  /tmp
 EXPOSE 3000 3000
 
 CMD ["python3", "unoservice/async.py"]
