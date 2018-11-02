@@ -24,6 +24,6 @@ RUN pip3 install -e .
 VOLUME  /tmp
 RUN chmod o+rwx  /tmp
 EXPOSE 3000 3000
-RUN rm -r /.cache
+RUN cd .. && rm -r .cache
 
 CMD ["python3", "unoservice/async.py"]
