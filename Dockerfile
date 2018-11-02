@@ -21,6 +21,6 @@ COPY setup.py /unoservice
 COPY unoservice /unoservice/unoservice
 WORKDIR /unoservice
 RUN pip3 install -e . 
-VOLUME /tmp /tmp
+VOLUME  /tmp
 
 CMD ["python3", "unoservice/async.py"]
