@@ -23,6 +23,7 @@ WORKDIR /unoservice
 RUN pip3 install -e . 
 VOLUME  /tmp
 RUN chmod o+rwx  /tmp
-EXPOSE 3000 3000
+EXPOSE 3000 
+EXPOSE 22
 RUN cd / && ls -la 
 CMD ["python3", "unoservice/async.py"]
