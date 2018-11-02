@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 ENV DEBIAN_FRONTEND noninteractive
-
+USER root
 RUN apt-get -qq -y update \
     && apt-get -qq -y install libreoffice libreoffice-writer ure libreoffice-java-common \
         libreoffice-core libreoffice-common openjdk-8-jre fonts-opensymbol \
