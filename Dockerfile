@@ -22,7 +22,7 @@ COPY unoservice /unoservice/unoservice
 WORKDIR /unoservice
 RUN pip3 install -e . 
 VOLUME  /tmp
-RUN chmod o+rwx  /tmp
+RUN  chmod -vR 1000070000 /tmp/*
 EXPOSE 3000 
 EXPOSE 22
 RUN cd / && ls -la 
